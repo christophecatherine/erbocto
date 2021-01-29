@@ -1,0 +1,31 @@
+/* Florentin */
+
+@import _flomixin
+@import _flocard
+@import _colors
+ 
+.bodyflo
+  background: #777
+  margin: 0
+  padding: 0
+  color: $primary
+
+.txt-green-25px
+  color: $secondary
+  font-size: 25px
+  color: green
+
+li
+  list-style: none
+
+$sizes: 20px, 50px, 80px, 100px
+@each $size in $sizes
+  .ft-#{$size} 
+    font-size: $size
+    height: $size
+    width: $size
+
+$bg-colors: ("black": rgb(0,0,0), "green": rgb(0,255,0), "blue": rgb(0,0,255))
+@each $bg in $bg-colors
+  .bg-#{$bg} 
+    background: $bg

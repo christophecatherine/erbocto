@@ -1,0 +1,87 @@
+/* Grand Ecran */
+
+.navigable-bar
+    top: 0
+    height: auto
+    width: 100%
+    position: fixed
+    display: -webkit-box
+    display: -moz-box
+    display: -ms-flexbox
+    display: -webkit-flex
+    display: flex
+    margin: 0
+    justify-content: center
+
+.navigable-bar-min
+    display: none
+
+.navigable-bar ul
+    margin: 0
+
+.navigable-bar ul li
+    list-style-type: none
+    display: inline-block
+    font-size: 22px
+    color: $color-text
+    padding: 22px
+
+.navigable-bar ul li a
+    text-decoration: none
+    color: $color-text
+
+.navigable-bar ul li a:hover
+    text-decoration: none
+    color: rgba(255, 255, 255, 0.562)
+
+/* Moyen Ecran */
+
+@media all and (max-width: 800px)
+    .navigable-bar
+        justify-content: space-around
+
+/* Petit Ecran */
+
+@media all and (max-width: 900px)
+    .navigable-bar
+        top: 0
+        height: 7%
+        width: 100%
+        position: relative
+        display: -webkit-box
+        display: -moz-box
+        display: -ms-flexbox
+        display: -webkit-flex
+        display: flex
+        margin: 0
+        justify-content: center
+    
+    .navigable-bar-div
+        position: relative
+        margin: 6px
+        padding: 0
+    
+    .navigable-bar-min
+        display: block
+        margin-top: -8px !important
+        padding: 0
+    
+    .naviglabe-bar-max
+        display: none
+    
+    .navigable-bar ul li i
+        font-size: 13px
+        color: $color-text
+        padding-right: 2px
+    
+    .navigable-bar ul li a
+        font-size: 12px
+        color: $color-text
+        font-weight: 600
+    
+    .navigable-bar ul li
+        list-style-type: none
+        font-size: 22px
+        color: $color-text
+        padding: 0px
+        margin: 19px

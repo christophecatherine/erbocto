@@ -1,0 +1,67 @@
+@import _grid.sass
+@import _flex.sass
+
+.body-cc
+    margin: 0
+    padding: 0
+    
+.container-cc
+    width: 100%
+    height: 100%
+    margin: 0 
+    background: #000
+    color: #fff
+    display: grid
+    grid-template-rows: 100px 300px 400px 100px
+    grid-template-columns: 400px repeat(3, 1fr)
+    grid-gap: 30px
+   
+.container-cc > * 
+    background-color: #bfbfbf
+    padding: 0
+    color: #000
+    font-size: 30px
+    font-family: sans-serif
+    
+
+.header-cc 
+    grid-column: 1 / -1    
+    
+.ul 
+    display: flex
+    justify-content: space-around
+
+.box-1-cc
+    display: flex
+    justify-content: center
+    background-image: url(https://toppng.com/uploads/preview/the-g-ery-for-assassins-creed-4-logo-png-assassins-creed-pirate-logo-11562899540izxpgcrpf0.png) 
+    background-size: 100% 100%
+    height: 100%
+    width: 100%
+
+.box-2-cc
+    display: flex
+    justify-content: center
+    background-image: url(https://e7.pngegg.com/pngimages/497/582/png-clipart-assassin-s-creed-iv-black-flag-assassin-s-creed-brotherhood-assassin-s-creed-syndicate-assassin-s-creed-unity-assassin-s-creed-origins-symbol.png) 
+    background-size: 100% 100%
+    height: 100%
+    width: 100%
+
+.box-3-cc
+    display: flex
+    justify-content: center
+    background-image: url(https://i.pinimg.com/originals/67/9e/f0/679ef09992341fd74191df4d577ee98c.jpg) 
+    background-size: 100% 100%
+    height: 100%
+    width: 100%
+
+.sidebar-cc
+    grid-column: 1 / 2
+    grid-row: 2 / span 2 
+
+.main
+    grid-column: 2 / -1
+
+.footer-cc
+    grid-column: 1 / -1
+    
